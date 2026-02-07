@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("images/siya.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center text exactly like image */
+.center-text {
+  text-align: center;
+}
+
+/* Valentine text styling */
+.center-text h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 90px;
+  color: #c4162a;
+  line-height: 1.1;
+
+  /* soft shadow like print */
+  text-shadow:
+    1px 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .center-text h1 {
+    font-size: 60px;
+  }
+}
+.next-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: #d62828;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.next-btn:hover {
+  background-color: #b11226;
+}
+/* Next page background */
+.next-page {
+  background: linear-gradient(to right, #ffd6dc, #ffeef2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content box */
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Text animation */
+.fade-in {
+  animation: fadeIn 2s ease;
+  color: #b11226;
+}
+
+/* Gallery layout */
+.gallery {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.4s;
+}
+
+/* Hover animation */
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* NEXT PAGE BACKGROUND IMAGE */
+.next-page {
+  min-height: 100vh;
+  background-image: url("images/next-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Soft white overlay for readability */
+.overlay-box {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+/* Font style */
+.overlay-box h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+  color: #b11226;
+}
+
+/* Gallery remains same */
+.gallery {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
