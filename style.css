@@ -115,11 +115,10 @@ body {
 /* NEXT PAGE BACKGROUND IMAGE */
 .next-page {
   min-height: 100vh;
-  background-image: url("images/next-bg.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background-image: url("next-bg.jpeg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
